@@ -1,56 +1,14 @@
-direita = keyboard_check(ord("D"));
-esquerda = keyboard_check(ord("A"));
-cima = keyboard_check_pressed(ord("W"));
-hit = keyboard_check_pressed(vk_space);
+script_execute(estado);
 
-if hit {
-	obj_personagem.vida -= 1;
-}
-
-hveloc = (direita - esquerda) * veloc;
-
-if direita {
-	direc = 0;
-	sprite_index = spr_personagem_andando;
-	image_xscale = 1;
-} else if esquerda {
-	direc = 1;
-	sprite_index = spr_personagem_andando;
-	image_xscale = -1;
-} else {
-	if direc == 0 {
-		sprite_index = spr_personagem_parado;
-		image_xscale = 1;
-	} else if direc == 1 {
-		sprite_index = spr_personagem_parado;
-		image_xscale = -1;
-	}
-}
-
-if !place_meeting(x, y + 1, obj_parede) {
-	vveloc += gravidade;
-} else {
-	if cima {
-		vveloc = pulo;
-	}
-}
-
-if place_meeting(x + hveloc, y, obj_parede) {
-	while !place_meeting(x + sign(hveloc), y, obj_parede) {
-		x += sign(hveloc);
+//Combate
+if alarm[0] > 0 {
+	if image_alpha >= 1 {
+		alfa_hit = -0.2;
+	} else if image_alpha <= 0 {
+		alfa_hit = 0.2;
 	}
 	
-	hveloc = 0;
+	image_alpha += alfa_hit;
+} else {
+	image_alpha = 1;
 }
-
-x += hveloc;
-
-if place_meeting(x, y + vveloc, obj_parede) {
-	while !place_meeting(x, y + sign(vveloc), obj_parede) {
-		y += sign(vveloc);
-	}
-	
-	vveloc = 0;
-}
-
-y += vveloc;

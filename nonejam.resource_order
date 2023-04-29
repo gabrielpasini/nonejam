@@ -18,10 +18,18 @@
   ],
   "ResourceOrderSettings": [
     {"name":"obj_parede","order":1,"path":"objects/obj_parede/obj_parede.yy",},
+    {"name":"spr_personagem_ataque","order":7,"path":"sprites/spr_personagem_ataque/spr_personagem_ataque.yy",},
+    {"name":"spr_ataque","order":8,"path":"sprites/spr_ataque/spr_ataque.yy",},
     {"name":"obj_controle","order":2,"path":"objects/obj_controle/obj_controle.yy",},
+    {"name":"obj_inimigo","order":3,"path":"objects/obj_inimigo/obj_inimigo.yy",},
     {"name":"spr_personagem_parado","order":2,"path":"sprites/spr_personagem_parado/spr_personagem_parado.yy",},
+    {"name":"obj_ataque","order":5,"path":"objects/obj_ataque/obj_ataque.yy",},
+    {"name":"obj_parede_inimigo","order":4,"path":"objects/obj_parede_inimigo/obj_parede_inimigo.yy",},
+    {"name":"spr_parede_inimigo","order":6,"path":"sprites/spr_parede_inimigo/spr_parede_inimigo.yy",},
     {"name":"spr_personagem_andando","order":3,"path":"sprites/spr_personagem_andando/spr_personagem_andando.yy",},
     {"name":"spr_vida","order":4,"path":"sprites/spr_vida/spr_vida.yy",},
+    {"name":"scr_fim_animacao","order":1,"path":"scripts/scr_fim_animacao/scr_fim_animacao.yy",},
     {"name":"spr_parede","order":1,"path":"sprites/spr_parede/spr_parede.yy",},
+    {"name":"spr_inimigo1_andando","order":5,"path":"sprites/spr_inimigo1_andando/spr_inimigo1_andando.yy",},
   ],
 }

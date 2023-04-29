@@ -1,4 +1,7 @@
-if place_meeting(x, y, obj_parede_inimigo) {
+if place_meeting(x + veloc, y, obj_parede_inimigo) {
+	while !place_meeting(x + sign(veloc), y, obj_parede_inimigo) {
+		x += sign(veloc);
+	}
 	if direc == 0 {
 		direc = 1;
 	} else if direc == 1 {

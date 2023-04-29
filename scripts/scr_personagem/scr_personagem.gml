@@ -2,29 +2,38 @@ function scr_personagem_movendo() {
 	//Movimentacao
 	direita = keyboard_check(ord("D"));
 	esquerda = keyboard_check(ord("A"));
-	cima = keyboard_check_pressed(ord("W"));
+	cima = keyboard_check_pressed(vk_space);
+	ataque = mouse_check_button_pressed(mb_left);
+	no_chao = place_meeting(x, y + 1, obj_parede);
 	
 	hveloc = (direita - esquerda) * veloc;
 	
-	if direita {
+	if (direita) {
 		direc = 0;
 		sprite_index = spr_personagem_andando;
 		image_xscale = 1;
-	} else if esquerda {
+	} else if (esquerda) {
 		direc = 1;
 		sprite_index = spr_personagem_andando;
 		image_xscale = -1;
 	} else {
+		sprite_index = spr_personagem_parado;
 		if direc == 0 {
-			sprite_index = spr_personagem_parado;
 			image_xscale = 1;
 		} else if direc == 1 {
-			sprite_index = spr_personagem_parado;
 			image_xscale = -1;
 		}
 	}
 	
-	if !place_meeting(x, y + 1, obj_parede) {
+	if !no_chao {
+		if direc == 0 {
+			sprite_index = spr_personagem_pulo;
+			image_xscale = 1;
+		} else if direc == 1 {
+			sprite_index = spr_personagem_pulo;
+			image_xscale = -1;
+		}
+		
 		vveloc += gravidade;
 	} else {
 		if cima {
@@ -48,14 +57,14 @@ function scr_personagem_movendo() {
 	}
 	y += vveloc;
 	
-	if keyboard_check_pressed(vk_space) {
+	if ataque && no_chao {
 		image_index = 0;
 		estado = scr_personagem_atacando;
 		
 		if direc == 0 {
-			instance_create_layer(x + 20, y - 64, "Instances", obj_ataque);
+			instance_create_layer(x + 20, y - 24, "Instances", obj_ataque);
 		} else if direc == 1 {
-			instance_create_layer(x - 20, y - 64, "Instances", obj_ataque);
+			instance_create_layer(x - 20, y - 24, "Instances", obj_ataque);
 		}
 	}
 }

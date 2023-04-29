@@ -34,5 +34,5 @@
     "path": "sprites/spr_ataque/spr_ataque.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

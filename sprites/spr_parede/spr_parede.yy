@@ -19,9 +19,7 @@
   "gridY": 0,
   "height": 32,
   "HTile": false,
-  "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3c69afdd-1651-479b-9563-5f7ee6b96e82","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
-  ],
+  "layers": null,
   "nineSlice": {
     "resourceType": "GMNineSliceData",
     "resourceVersion": "1.0",
@@ -46,7 +44,7 @@
     ],
     "top": 0,
   },
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",

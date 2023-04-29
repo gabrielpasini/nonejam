@@ -1,1 +1,0 @@
-script_execute(statesList[state]);

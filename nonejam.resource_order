@@ -10,6 +10,8 @@
     {"name":"obj_bomb","order":4,"path":"objects/obj_bomb/obj_bomb.yy",},
     {"name":"obj_parede_inimigo","order":5,"path":"objects/obj_parede_inimigo/obj_parede_inimigo.yy",},
     {"name":"obj_explosao","order":6,"path":"objects/obj_explosao/obj_explosao.yy",},
+    {"name":"obj_music","order":11,"path":"objects/obj_music/obj_music.yy",},
+    {"name":"aud_musicajogo","order":1,"path":"sounds/aud_musicajogo/aud_musicajogo.yy",},
     {"name":"spr_buttonplay","order":1,"path":"sprites/spr_buttonplay/spr_buttonplay.yy",},
     {"name":"obj_player2","order":7,"path":"objects/obj_player2/obj_player2.yy",},
     {"name":"obj_player1","order":8,"path":"objects/obj_player1/obj_player1.yy",},

@@ -2,6 +2,7 @@
 direita = 0;
 esquerda = 0;
 cima = 0;
+pulou = 0;
 
 direc = 0;
 

@@ -18,6 +18,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"obj_parede","order":1,"path":"objects/obj_parede/obj_parede.yy",},
+    {"name":"spr_personagem_pulo_duplo","order":10,"path":"sprites/spr_personagem_pulo_duplo/spr_personagem_pulo_duplo.yy",},
     {"name":"spr_personagem_ataque","order":7,"path":"sprites/spr_personagem_ataque/spr_personagem_ataque.yy",},
     {"name":"ts_tiles","order":1,"path":"tilesets/ts_tiles/ts_tiles.yy",},
     {"name":"spr_ataque","order":8,"path":"sprites/spr_ataque/spr_ataque.yy",},
@@ -25,6 +26,7 @@
     {"name":"obj_controle","order":2,"path":"objects/obj_controle/obj_controle.yy",},
     {"name":"obj_inimigo","order":3,"path":"objects/obj_inimigo/obj_inimigo.yy",},
     {"name":"spr_personagem_parado","order":2,"path":"sprites/spr_personagem_parado/spr_personagem_parado.yy",},
+    {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
     {"name":"obj_ataque","order":5,"path":"objects/obj_ataque/obj_ataque.yy",},
     {"name":"obj_parede_inimigo","order":4,"path":"objects/obj_parede_inimigo/obj_parede_inimigo.yy",},
     {"name":"spr_parede_inimigo","order":6,"path":"sprites/spr_parede_inimigo/spr_parede_inimigo.yy",},

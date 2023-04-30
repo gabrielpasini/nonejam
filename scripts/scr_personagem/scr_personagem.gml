@@ -1,10 +1,12 @@
 function scr_personagem_movendo() {
-	//Movimentacao
 	direita = keyboard_check(ord("D"));
 	esquerda = keyboard_check(ord("A"));
-	cima = keyboard_check_pressed(vk_space);
-	ataque = mouse_check_button_pressed(mb_left);
+	// cima = keyboard_check_pressed(vk_space);
+	cima = keyboard_check_pressed(ord("W"));
 	no_chao = place_meeting(x, y + 1, obj_parede);
+	
+	// ataque = mouse_check_button_pressed(mb_left);
+	ataque = 0;
 	
 	hveloc = (direita - esquerda) * veloc;
 	
@@ -25,19 +27,36 @@ function scr_personagem_movendo() {
 		}
 	}
 	
+	show_debug_message(pulou);
+	
 	if !no_chao {
 		if direc == 0 {
-			sprite_index = spr_personagem_pulo;
+			if pulou == 2 {
+				sprite_index = spr_personagem_pulo_duplo;
+			} else {
+				sprite_index = spr_personagem_pulo;
+			}
 			image_xscale = 1;
 		} else if direc == 1 {
-			sprite_index = spr_personagem_pulo;
+			if pulou == 2 {
+				sprite_index = spr_personagem_pulo_duplo;
+			} else {
+				sprite_index = spr_personagem_pulo;
+			}
 			image_xscale = -1;
+		}
+		
+		if cima && pulou == 1 {
+			vveloc = pulo;
+			pulou += 1;
 		}
 		
 		vveloc += gravidade;
 	} else {
-		if cima {
+		pulou = 0;
+		if cima && pulou == 0 {
 			vveloc = pulo;
+			pulou += 1;
 		}
 	}
 	
@@ -57,7 +76,7 @@ function scr_personagem_movendo() {
 	}
 	y += vveloc;
 	
-	if ataque && no_chao {
+	 if ataque && no_chao {
 		image_index = 0;
 		estado = scr_personagem_atacando;
 		

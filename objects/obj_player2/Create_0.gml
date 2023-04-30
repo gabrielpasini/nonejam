@@ -4,7 +4,7 @@ esquerda = 0;
 cima = 0;
 pulou = 0;
 
-direc = 0;
+direc = 1;
 
 gravidade = 0.40;
 tamanho_pulo = -10;
@@ -21,7 +21,12 @@ vveloc = 0;
 veloc = 4.2;
 
 //Combate
-pega = 0;
+if obj_player1.pega == 1 {
+	pega = 0;
+} else if obj_player1.pega == 0 {
+	pega = 1;
+}
+
 vida = 5;
 bomba = 0;
 dano = 0;

@@ -32,14 +32,7 @@ if obj_player2.vida == 0 {
     draw_set_alpha(0.8);
     draw_set_halign(fa_center);
 	draw_sprite_ext(spr_player1_vencedor, 0, 448, 0, 1, 1, 0, c_white, 1);
-	obj_player1.pega = 0;
-	obj_player1.veloc = 0;
-	obj_player1.pulo = 0;
-	obj_player1.bomba = 1;
-	obj_player2.pega = 0;
-	obj_player2.veloc = 0;
-	obj_player2.pulo = 0;
-	obj_player2.bomba = 1;
+	fim_jogo = 1;
 }
 
 if obj_player1.vida == 0 {
@@ -47,12 +40,5 @@ if obj_player1.vida == 0 {
     draw_set_alpha(0.8);
     draw_set_halign(fa_center);
 	draw_sprite_ext(spr_player2_vencedor, 0, 960, 512, 1, 1, 0, c_white, 1);
-	obj_player1.pega = 0;
-	obj_player1.veloc = 0;
-	obj_player1.pulo = 0;
-	obj_player1.bomba = 1;
-	obj_player2.pega = 0;
-	obj_player2.veloc = 0;
-	obj_player2.pulo = 0;
-	obj_player2.bomba = 1;
+	fim_jogo = 1;
 }

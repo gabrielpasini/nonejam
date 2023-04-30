@@ -17,7 +17,15 @@ initial_veloc_pega = 4.5;
 veloc = initial_veloc;
 
 //Combate
-pega = 1;
+var randomico = random(2);
+show_debug_message(randomico);
+
+if randomico > 1 {
+	pega = 1;
+} else {
+	pega = 0;
+}
+
 vida = 5;
 bomba = 0;
 dano = 0;

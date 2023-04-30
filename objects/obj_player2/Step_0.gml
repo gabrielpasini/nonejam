@@ -29,6 +29,7 @@ if alarm[0] > 0 {
 
 if alarm[0] == 1 {
 	pega = 1;
+	bomba = 0;
 }
 
 if dano == 1 {
@@ -43,4 +44,12 @@ if alarm[1] > 0 {
 
 if alarm[1] == 1 {
 	dano = 0;
+}
+
+if obj_controle.fim_jogo == 1 {
+	paralizado = 1;
+	pega = 0;
+	veloc = 0;
+	pulo = 0;
+	bomba = 1;
 }

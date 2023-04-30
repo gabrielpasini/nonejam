@@ -25,10 +25,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_parede_inimigo",
-    "path": "sprites/spr_parede_inimigo/spr_parede_inimigo.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": false,
 }

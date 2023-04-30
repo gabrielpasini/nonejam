@@ -1,7 +1,7 @@
 script_execute(estado);
 
 //Combate
-if alarm[1] > 0 {
+if alarm[0] > 0 {
 	if image_alpha >= 1 {
 		alfa_hit = -0.2;
 	} else if image_alpha <= 0 {
@@ -15,6 +15,6 @@ if alarm[1] > 0 {
 	image_alpha = 1;
 }
 
-if alarm[1] == 1 {
+if alarm[0] == 1 {
 	pega = 1;
 }

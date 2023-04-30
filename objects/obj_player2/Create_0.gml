@@ -17,6 +17,6 @@ veloc = 4.2;
 pega = 0;
 vida = 5;
 alfa_hit = 0;
-alarm[1] = 0;
+alarm[0] = 0;
 
 estado = scr_player2_movendo;

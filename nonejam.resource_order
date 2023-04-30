@@ -32,6 +32,8 @@
     {"name":"spr_player1_parado","order":2,"path":"sprites/spr_player1_parado/spr_player1_parado.yy",},
     {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
     {"name":"obj_ataque","order":5,"path":"objects/obj_ataque/obj_ataque.yy",},
+    {"name":"s4m_ur4i_bg_clouds","order":2,"path":"sprites/s4m_ur4i_bg_clouds/s4m_ur4i_bg_clouds.yy",},
+    {"name":"s4m_ur4i_bg_clouds13","order":11,"path":"sprites/s4m_ur4i_bg_clouds13/s4m_ur4i_bg_clouds13.yy",},
     {"name":"obj_parede_inimigo","order":4,"path":"objects/obj_parede_inimigo/obj_parede_inimigo.yy",},
     {"name":"spr_parede_inimigo","order":6,"path":"sprites/spr_parede_inimigo/spr_parede_inimigo.yy",},
     {"name":"spr_player2_ataque","order":11,"path":"sprites/spr_player2_ataque/spr_player2_ataque.yy",},
@@ -42,6 +44,7 @@
     {"name":"scr_fim_animacao","order":1,"path":"scripts/scr_fim_animacao/scr_fim_animacao.yy",},
     {"name":"obj_player2","order":6,"path":"objects/obj_player2/obj_player2.yy",},
     {"name":"spr_parede","order":1,"path":"sprites/spr_parede/spr_parede.yy",},
+    {"name":"Terrain__16x16_","order":1,"path":"sprites/Terrain__16x16_/Terrain__16x16_.yy",},
     {"name":"spr_inimigo1_andando","order":5,"path":"sprites/spr_inimigo1_andando/spr_inimigo1_andando.yy",},
   ],
 }

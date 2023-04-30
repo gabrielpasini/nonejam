@@ -1,12 +1,9 @@
 function scr_player1_movendo() {
 	direita = keyboard_check(ord("D"));
 	esquerda = keyboard_check(ord("A"));
-	// cima = keyboard_check_pressed(vk_space);
 	cima = keyboard_check_pressed(ord("W"));
 	no_chao = place_meeting(x, y + 1, obj_parede);
-	
-	// ataque = mouse_check_button_pressed(mb_left);
-	ataque = 0;
+	ataque = keyboard_check_pressed(ord("F"));
 	
 	hveloc = (direita - esquerda) * veloc;
 	
@@ -74,28 +71,12 @@ function scr_player1_movendo() {
 	}
 	y += vveloc;
 	
-	 if ataque && no_chao {
-		image_index = 0;
-		estado = scr_player1_atacando;
-		
+	 if ataque && no_chao && bomba == 0 && !pega {
 		if direc == 0 {
-			instance_create_layer(x + 20, y - 24, "Instances", obj_ataque);
+			instance_create_layer(x - 20, y - 16, "Instances", obj_bomb);
 		} else if direc == 1 {
-			instance_create_layer(x - 20, y - 24, "Instances", obj_ataque);
+			instance_create_layer(x + 20, y - 16, "Instances", obj_bomb);
 		}
-	}
-}
-
-function scr_player1_atacando() {
-	if direc == 0 {
-		sprite_index = spr_player1_ataque;
-		image_xscale = 1;
-	} else if direc == 1 {
-		sprite_index = spr_player1_ataque;
-		image_xscale = -1;
-	}
-	
-	if src_fim_animacao() {
-		estado = scr_player1_movendo;
+		bomba = 1;
 	}
 }

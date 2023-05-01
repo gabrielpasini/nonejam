@@ -1,7 +1,10 @@
 {
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
+    {"name":"aud_vitoria","order":5,"path":"sounds/aud_vitoria/aud_vitoria.yy",},
+    {"name":"aud_dano","order":3,"path":"sounds/aud_dano/aud_dano.yy",},
     {"name":"spr_buttonplay_pressed","order":2,"path":"sprites/spr_buttonplay_pressed/spr_buttonplay_pressed.yy",},
+    {"name":"aud_explosao","order":4,"path":"sounds/aud_explosao/aud_explosao.yy",},
     {"name":"obj_controle","order":1,"path":"objects/obj_controle/obj_controle.yy",},
     {"name":"obj_inimigo","order":2,"path":"objects/obj_inimigo/obj_inimigo.yy",},
     {"name":"spr_bomba_hud","order":5,"path":"sprites/spr_bomba_hud/spr_bomba_hud.yy",},
@@ -12,9 +15,10 @@
     {"name":"obj_bomb","order":4,"path":"objects/obj_bomb/obj_bomb.yy",},
     {"name":"obj_parede_inimigo","order":5,"path":"objects/obj_parede_inimigo/obj_parede_inimigo.yy",},
     {"name":"obj_explosao","order":6,"path":"objects/obj_explosao/obj_explosao.yy",},
-    {"name":"spr_buttonplay_again","order":3,"path":"sprites/spr_buttonplay_again/spr_buttonplay_again.yy",},
     {"name":"obj_music","order":11,"path":"objects/obj_music/obj_music.yy",},
+    {"name":"aud_pulo","order":2,"path":"sounds/aud_pulo/aud_pulo.yy",},
     {"name":"aud_musicajogo","order":1,"path":"sounds/aud_musicajogo/aud_musicajogo.yy",},
+    {"name":"spr_buttonplay_again","order":3,"path":"sprites/spr_buttonplay_again/spr_buttonplay_again.yy",},
     {"name":"spr_buttonplay","order":1,"path":"sprites/spr_buttonplay/spr_buttonplay.yy",},
     {"name":"obj_player2","order":7,"path":"objects/obj_player2/obj_player2.yy",},
     {"name":"obj_player1","order":8,"path":"objects/obj_player1/obj_player1.yy",},

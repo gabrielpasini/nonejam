@@ -42,6 +42,7 @@ function scr_player1_movendo() {
 		}
 		
 		if cima && pulou == 1 {
+			audio_play_sound(aud_pulo, 2, false);
 			vveloc = pulo;
 			pulou += 1;
 		}
@@ -50,6 +51,7 @@ function scr_player1_movendo() {
 	} else {
 		pulou = 0;
 		if cima && pulou == 0 {
+			audio_play_sound(aud_pulo, 2, false);
 			vveloc = pulo;
 			pulou += 1;
 		}

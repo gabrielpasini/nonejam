@@ -3,6 +3,7 @@
   "ResourceOrderSettings": [
     {"name":"aud_vitoria","order":5,"path":"sounds/aud_vitoria/aud_vitoria.yy",},
     {"name":"aud_dano","order":3,"path":"sounds/aud_dano/aud_dano.yy",},
+    {"name":"spr_devs","order":6,"path":"sprites/spr_devs/spr_devs.yy",},
     {"name":"spr_buttonplay_pressed","order":2,"path":"sprites/spr_buttonplay_pressed/spr_buttonplay_pressed.yy",},
     {"name":"aud_explosao","order":4,"path":"sounds/aud_explosao/aud_explosao.yy",},
     {"name":"obj_controle","order":1,"path":"objects/obj_controle/obj_controle.yy",},
